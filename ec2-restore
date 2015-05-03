@@ -16,8 +16,7 @@
 # 8. Unmount and detach the volume.
 # 9. Terminate the machine.
 # 10. Delete security group.
-# 11. Backup the volume to an S3 snapshot. 
-# 12. Delete the volume. 
+# 11. Delete the volume. 
 
 # Define location of rsync logfile.
 RSYNC_LOG=/home/lindo/restore/ec2-restore-rsync.log
