@@ -1,0 +1,17 @@
+# Script to restore files from an aws snapshot. 
+# Lindo St. Angel 2014.
+
+# Script assumes an existing aws account and aws cli tools have been installed on client. 
+
+# This script generally follows these steps (with error checking).
+# 1. Get external IP address of host (also serves to check for Internet connection.)
+# 2. Create a volume to store backup data before snapshot. 
+# 3. Create an ec2 security group. 
+# 4. Create an machine instance with ec2.
+# 5. Attach a volume to it.
+# 6. Mount the volume.
+# 7. rsync some directories to the volume mounted on the remote machine
+# 8. Unmount and detach the volume.
+# 9. Terminate the machine.
+# 10. Delete security group.
+# 11. Delete the volume. 
